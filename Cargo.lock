@@ -290,27 +290,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "http-body"
-version = "0.4.5"
-source = "git+https://github.com/hyperium/http-body?rev=6d7dd17#6d7dd177dcbea2ffd1067f9f344beda7af5c78f2"
-dependencies = [
- "bytes",
- "http",
-]
-
-[[package]]
-name = "http-body-util"
-version = "0.1.0"
-source = "git+https://github.com/hyperium/http-body?rev=6d7dd17#6d7dd177dcbea2ffd1067f9f344beda7af5c78f2"
-dependencies = [
- "bytes",
- "futures-util",
- "http",
- "http-body 0.4.5 (git+https://github.com/hyperium/http-body?rev=6d7dd17)",
- "pin-project-lite",
-]
-
-[[package]]
 name = "httparse"
 version = "1.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -334,7 +313,7 @@ dependencies = [
  "futures-util",
  "h2",
  "http",
- "http-body 0.4.5 (registry+https://github.com/rust-lang/crates.io-index)",
+ "http-body",
  "httparse",
  "httpdate",
  "itoa",
@@ -635,7 +614,6 @@ name = "test_zip"
 version = "0.1.0"
 dependencies = [
  "bytes",
- "http-body-util",
  "hyper",
  "tokio",
  "zip",
